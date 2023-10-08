@@ -1,0 +1,76 @@
+.mainCard {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 10px auto;
+    gap: 15px;
+}
+
+.svg {
+    display: flex;
+    align-items: flex-start;
+}
+
+.messageContainer {
+    color: #2C2C2E;
+    position: relative;
+    padding: 10px;
+    background-color: #F2F2F7;
+    text-align: left;
+    border-radius: 10px;
+    max-width: 60%;
+}
+
+.cardHead {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.unbold {
+    font-weight: normal;
+    margin-left: 15px;
+}
+
+.messageContainer::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #F2F2F7;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: -12px;
+}
+
+.card {
+    min-height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+}
+
+.read {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .messageContainer {
+        max-width: 80%;
+        min-height: 60px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .time {
+        font-size: 12px;
+    }
+}

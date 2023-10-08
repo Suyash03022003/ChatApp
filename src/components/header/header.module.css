@@ -1,0 +1,59 @@
+.header {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1.5px solid #777;
+    z-index: 1000;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.head {
+    font-weight: bold;
+}
+
+.teamHead {
+    text-align: center;
+    margin-left: -7%;
+}
+
+@media screen and (max-width: 1024px) {
+    .group {
+        width: 12%;
+    }
+
+    .teamHead {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .group {
+        width: 14%;
+    }
+
+    .teamHead {
+        margin-left: -13%;
+    }
+
+    .icon {
+        width: 3.5%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .group {
+        width: 22%;
+    }
+
+    .teamHead {
+        margin-left: -15%;
+    }
+
+    .icon {
+        width: 7%;
+    }
+}

@@ -1,0 +1,60 @@
+.mainCard {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin: 10px auto;
+}
+
+.MemessageContainer {
+    color: white;
+    position: relative;
+    padding: 10px;
+    background-color: #007AFF;
+    text-align: left;
+    border-radius: 10px;
+    max-width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    min-height: 55px;
+}
+
+.messageContainer::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #007AFF;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    right: -12px;
+}
+
+.time {
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+}
+
+.read {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .MemessageContainer {
+        max-width: 80%;
+    }
+
+    .MemessageContainer {
+        min-height: 60px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .time {
+        font-size: 12px;
+    }
+}

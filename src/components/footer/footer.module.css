@@ -1,0 +1,45 @@
+.footer {
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    z-index: 1000;
+    border-top: 1.5px solid #bbbbbb;
+    box-shadow: 0px -1px 10px #999;
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+}
+
+input:focus {
+    border: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer svg {
+        width: 3%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .footer svg {
+        width: 4%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .footer svg {
+        width: 7%;
+    }
+    .footer input {
+        width: 60%;
+    } 
+}
