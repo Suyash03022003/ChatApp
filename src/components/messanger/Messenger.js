@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './messenger.module.css';
-import messages from './data';
+// import messages from './data';
 import MeCard from "./MeCard";
 import UserCard from "./UserCard";
 
@@ -12,14 +12,14 @@ function getDate() {
   return `${date}/${month}/${year}`;
 }
 
-export default function Messenger() {
+export default function Messenger({message}) {
   const [currentDate, setCurrentDate] = useState(getDate());
-
+  console.log(message);
   return (
     <div className={styles.messengerBody}>
       <p className={styles.dateHeading + " " + styles.head}>{currentDate}</p>
       <div>
-        {messages.map((card) => {
+        {message.map((card) => {
           if (card.user === "Me") {
             return <MeCard key={card.messageId} {...card}></MeCard>;
           } else {

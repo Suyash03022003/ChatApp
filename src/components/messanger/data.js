@@ -4,7 +4,7 @@ import { ReactComponent as Aubrey } from '../../images/aubrey.svg'
 import { ReactComponent as Jav } from '../../images/jav.svg'
 import { ReactComponent as Read } from '../../images/read.svg'
 
-const messages = [
+var messages = [
     {
         messageId: 1,
         user: "Me",
